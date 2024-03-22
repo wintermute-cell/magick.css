@@ -207,6 +207,7 @@ h3 {
 
 /* Add a decorative element before h3 headings. */
 h3:before {
+    font-family: "Noto Sans Symbols 2", sans-serif;
     content: "🙛 ";
 }
 
