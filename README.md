@@ -1,7 +1,8 @@
 # magick.css
 > magically playful, yet simple styling. all in one file.
 
-![a wizard](wizard.webp)
+<br>
+<img alt="a wizard" src="wizard.webp" width="240" height="240">
 
 ## What is magick.css?
 magick.css is a minimalistic, (mostly) classless CSS framework that is designed
