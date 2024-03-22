@@ -87,8 +87,25 @@
           using it is strongly recommended!
         </aside>
         <p>
-          TODO: installing
+          The easiest way to check out magick.css for your own project is to add it from
+          a CDN. Just add these two lines to your html <code>&lt;head&gt;</code>:
         </p>
+        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/normalize.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/magick.css&quot;&gt;</code></pre>
+        <p>
+          You could also just download the magick.css file from this repo, and include
+          it into your html <code>&lt;head&gt;</code> as you normally would:
+        </p>
+        <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/magick.css&quot;&gt;</code></pre>
+        <p>
+          You could also add magick.css to your JS project like this:
+        </p>
+        <pre><code>npm install normalize.css magick.css</code></pre>
+        <p>
+          And import them in your code:
+        </p>
+        <pre><code>import 'normalize.css'
+import 'magick.css'</code></pre>
         <p>
           For anything beyond that: magick.css should work with any HTML5
           document, as it is 99% classless. There are some cool features that
