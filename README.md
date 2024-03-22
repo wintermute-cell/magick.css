@@ -17,7 +17,7 @@ ethic of brutalism.
 
 ## What does it look like?
 You can find a live example of magick.css being used [on my
-website](css.winterveil.net)!
+website](https://css.winterveil.net)!
 
 ## How do I use magick.css?
 > magick.css is build with
