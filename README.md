@@ -1,6 +1,8 @@
 # magick.css
 > magically playful, yet simple styling. all in one file.
 
+![a wizard](wizard.webp)
+
 ## What is magick.css?
 magick.css is a minimalistic, (mostly) classless CSS framework that is designed
 to be easy to use and easy to understand. It is contained in a single file, and
