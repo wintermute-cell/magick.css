@@ -1,0 +1,74 @@
+@keyframes shiftGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes shiftGradientBack {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background-color: var(--bg);
+    position: relative;
+    border-radius: 60% 0 0 0;
+    padding-top: 4rem;
+}
+
+header::after {
+    --accent: #98E6B5ff;
+    --shadow: #0000003b;
+}
+
+@media (prefers-color-scheme: dark) {
+    header::after {
+        --accent: #98E6B5ff;
+        --shadow: #ffffff3b;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        padding-top: 6rem !important;
+    }
+
+    header::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        /* Match the width of the h1 */
+        height: 100%;
+        /* Match the height of the h1 */
+        left: 1.6rem;
+        /* Horizontal position of the shadow */
+        top: -2.1rem;
+        /* Vertical position of the shadow */
+        background:
+            /* Gradient from shadow color to accent color */
+            linear-gradient(to right, var(--shadow) 50%, var(--accent));
+        background-size: 250% 100%;
+        /* Make the gradient larger than the element */
+        filter: blur(8px);
+        /* Blur effect for the shadow */
+        z-index: -1;
+        /* Ensure the shadow is behind the text */
+        border-radius: 60% 0 0 0;
+        /* Match the border-radius of the h1 */
+        transition: all 0.3s ease-in-out;
+        animation: shiftGradientBack 0.8s ease forwards;
+    }
+
+    header:hover::after {
+        animation: shiftGradient 0.8s ease forwards;
+    }
+}

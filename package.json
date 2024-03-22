@@ -1,0 +1,33 @@
+{
+  "name": "magick.css",
+  "version": "1.0.0",
+  "description": "magically playful, yet simple styling. all in one file.",
+  "main": "magick.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wintermute-cell/magick.css.git"
+  },
+  "keywords": [
+    "css",
+    "magick",
+    "ttrpg",
+    "old-school",
+    "latex",
+    "framework",
+    "tufte",
+    "concrete",
+    "html",
+    "css-framework",
+    "design",
+    "frontend"
+  ],
+  "author": "winterveil",
+  "license": "MIT",
+  "files": [
+    "magick.css"
+  ],
+  "bugs": {
+    "url": "https://github.com/wintermute-cell/magick.css/issues"
+  },
+  "homepage": "css.winterveil.net"
+}

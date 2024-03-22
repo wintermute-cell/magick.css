@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>magick.css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="book-header.css">
+    <link rel="stylesheet" href="magick.css">
+
+    <!-- This site contains some specific styles for the content, which are not part of magick.css -->
+    <style>
+    header {
+      margin-bottom: 2em;
+    }
+
+    .typography-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Adjust the space between columns as needed */
+    }
+
+    .typography-columns > div {
+      flex: 1; /* Allows each child div to grow equally */
+      min-width: 250px; /* Prevents the columns from getting too narrow before stacking */
+    }
+
+    @media (max-width: 600px) {
+      .typography-columns {
+      flex-direction: column;
+    }
+    </style>
+
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>magick.css</h1>
+        <p style="text-align: center; margin-top:-2.3rem; margin-bottom:-0.2rem; margin-left:-15rem; font-size: 1.4rem">by <a href="https://github.com/wintermute-cell/" target="_blank">winterveil</a></p>
+        <nav>
+          <ul>
+            <li><a target="_blank" href="https://github.com/wintermute-cell/magick.css">Github</a></li>
+            <li><a target="_blank" href="https://discord.gg/f8nyyK4ngZ">Discord</a></li>
+            <li><a target="_blank" href="https://www.buymeacoffee.com/winterv">Donate</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="fundamentals">
+        <blockquote>
+          <p>
+          In the grand compendium of universal knowledge, it is universally
+          acknowledged that the scribbles of a wizard not only transcend the
+          mundane but are, without a shadow of a doubt, the most exhilarating
+          form of notation known to humanoid kind. For who could resist the
+          allure of a well-placed spell in the margins?
+          </p>
+          <footer>Albus Greybeard, <cite>On the Virtues of Mystical Marginalia</cite>, 1132</footer>
+        </blockquote>
+        <h2>Fundamentals</h2>
+        <p>
+          magick.css is a minimalistic, (mostly) classless CSS framework that
+          is designed to be easy to use and easy to understand. It is contained
+          in a single file, and every choice is commented. The goal is to
+          achieve an elegant, but magically playful look, while maximizing
+          readability and the ability to convey information; <em>somewhat akin
+            to the notes of a wizard</em>.
+        </p>
+        <p>
+          The framework retains its beauty and functionality across <strong>all
+            devices</strong> and screen sizes, and works entirely
+          <strong>without JavaScript</strong>. It is inspired by <a
+            href="https://www.latex-project.org/" target="_blank">LaTeX</a>,
+          old school TTRPG rulebooks, CSS frameworks like <a
+            href="https://concrete.style/" target="_blank">concrete.css</a> and
+          <a href="https://edwardtufte.github.io/tufte-css/"
+            target="_blank">Tufte CSS</a> and the "usability as design" ethic of
+          brutalism.
+        </p>
+      </section>
+
+      <section id="howto">
+        <h2>How to use magick.css</h2>
+        <aside>
+          magick.css works best with <a
+            href="https://necolas.github.io/normalize.css/">normalize.css</a>,
+          using it is strongly recommended!
+        </aside>
+        <p>
+          TODO: installing
+        </p>
+        <p>
+          For anything beyond that: magick.css should work with any HTML5
+          document, as it is 99% classless. There are some cool features that
+          you can use, though; just scroll down to discover them!
+        </p>
+      </section>
+
+      <section id="layout">
+        <h2>Layout</h2>
+        <p>
+          To have your page structured as a responsive, readable column, wrap
+          all of your content in <code>&lt;main&gt</code> tags, and then use
+          <code>&lt;section&gt</code> tags to break up long form content
+          content into sections. This page is a good example of how to do this.
+        <p>
+        <p>
+          (You could of course just ignore this advice and use magick.css for
+          typography and styled components only.)
+        </p>
+        <p>Here is a simple example of the usual structure:</p>
+        <pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;main&gt;
+      &lt;header&gt; &lt;/header&gt;
+      &lt;section&gt; &lt;/section&gt;
+      &lt;section&gt; &lt;/section&gt;
+      &lt;section&gt; &lt;/section&gt;
+      &lt;footer&gt; &lt;/footer&gt;
+    &lt;/header&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <p>
+          To add tangential information, magick.css uses the
+          <code>&lt;aside&gt;</code> tag. You will find it used from time to
+          time on this page. Should you want to elaborate on a point, or provide
+          additional context, you can use magick.css's sidenotes.<span class="sidenote-anchor"></span>
+          <span class="sidenote">Sidenotes are automagically numbered!</span>
+          You can find out more about this in the <a href="#extras">Extras</a>
+          section below.
+        </p>
+      </section>
+
+      <section id="typography">
+        <h2>Typography</h2>
+        <p>
+          Here is a showcase of the typography that magick.css offers:
+        </p>
+        <br>
+        <div class="typography-columns">
+          <div>
+            <h1>Heading 1: A title bold and grand, the story's gate.</h1>
+            <h2>Heading 2: A subtitle beneath, where chapters await.</h2>
+            <h3>Heading 3: With secrets whispered, plots thicken here.</h3>
+            <h4>Heading 4: Fine details shared, the message stands clear.</h4>
+          </div>
+          <div>
+            <p>Paragraphs flow, a river of text,</p>
+            <p><a href="#">Links like portals, where will we go next?</a></p>
+            <p><strong>Strong as stone, our words firmly stand,</strong></p>
+            <p><em>Emphasized whispers, softly they land.</em></p>
+            <p><u>Underlined secrets, subtly hinted,</u></p>
+            <p><small>Small, yet mighty, our words are minted.</small></p>
+            <p><code>Code speaks in logic, crisp and neat,</code></p>
+            <p>Typography's spell, now complete.</p>
+          </div>
+        </div>
+        <br>
+        <p>
+          Headings below <code>&lt;h4&gt;</code> are not styled by magick.css;
+          they are usually not needed for hierarchical structuring, but instead
+          for very specific use cases. So should you need them, you can style
+          them as you see fit.
+        </p>
+        <blockquote>
+          <p>
+            [It is] notable that the Feynman lectures [...] write
+            about all of physics in 1800 pages, using only 2 levels of
+            hierarchical headings: chapters and A-level heads in the text.
+          </p>
+          <footer>
+            <a href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
+              Edward Tufte, foum post, <cite>‘Book design: advice and examples’ thread</cite>
+            </a>
+          </footer>
+        </blockquote>
+      </section>
+
+      <section id="structured-content">
+        <h2>Structured Content</h2>
+        <h3>Lists</h3>
+        <p>
+          Lists are kept simple, as to not distract from the content:
+        </p>
+        <ul>
+          <li>This is...</li>
+          <li>... an unordered list.</li>
+        </ul>
+        <br>
+        <ol>
+          <li>This is...</li>
+          <li>... an ordered list.</li>
+        </ol>
+        <br>
+        <dl>
+          <dt>And this weird fellow here...</dt>
+          <dd>... is a description list.</dd>
+        </dl>
+        <br>
+        <h3>Tables</h3>
+        <p>
+          In a similar manner to lists, tables are clear and concise,
+          directing reader focus to the data at hand:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Potion</th>
+              <th>Main Ingredient</th>
+              <th>Catalyst</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Glow Dew</td>
+              <td>Bioluminescent algae (81mg)</td>
+              <td style="text-align:center;font-weight:500;">🜼</td>
+            </tr>
+            <tr>
+              <td>Float Leaf</td>
+              <td>Dandelion puff (61mg)</td>
+              <td style="text-align:center;font-weight:500;">🝆</td>
+            </tr>
+            <tr>
+              <td>Might Brew</td>
+              <td>Ginseng root (78mg)</td>
+              <td style="text-align:center;font-weight:500;">🝀</td>
+            </tr>
+            <tr>
+              <td>Vanish Draft</td>
+              <td>Mimosa pudica (26mg)</td>
+              <td style="text-align:center;font-weight:500;">🜞</td>
+            </tr>
+            <tr>
+              <td>Remembrance Tea</td>
+              <td>Ginkgo biloba (39mg)</td>
+              <td style="text-align:center;font-weight:500;">🜇</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section id="forms-and-input">
+        <h2>Forms & Input</h2>
+        Interactive elements can be used on their own, or as part of a form.
+        Keep reading to see examples of both.
+        <h3>Buttons</h3>
+        <button>I am a button.</button>
+        <button disabled>I am disabled.</button>
+
+        <h3>Text Inputs</h3>
+        <p>
+          Free standing text inputs are not opinionated in regards to their size
+          or placement, as their use can vary greatly. Here are some examples:
+        </p>
+        <input style="display:block;" type="text" placeholder="I am a text input.">
+        <input style="display:block;" type="text" placeholder="I am disabled." disabled>
+        <textarea placeholder="I am a textarea."></textarea>
+
+        <h3>Checkboxes & Radio Buttons</h3>
+        <p>
+          Labels for checkboxes and radio buttons are expected <em>after</em>
+          the input element. This way, magick.css can ensure proper grouped
+          spacing between them, without requiring additional wrappers and classes.
+        </p>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+        <label for="checkbox1">I am a checkbox.</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2" disabled>
+        <label for="checkbox2">I am disabled.</label>
+        <br>
+        <input type="radio" id="radio1" name="radio" value="radio1">
+        <label for="radio1">I am a radio button.</label>
+        <input type="radio" id="radio2" name="radio" value="radio2" disabled>
+        <label for="radio2">I am disabled.</label>
+        <p></p>
+        <fieldset>
+          <legend>Fieldset</legend>
+          <input type="radio" id="radio3" name="radio2">
+          <label for="radio3">I am some option.</label>
+          <input type="radio" id="radio4" name="radio2">
+          <label for="radio4">I am another option.</label>
+        </fieldset>
+
+        <h3>Forms</h3>
+        <p>
+          Forms provide a structured context for interactive elements. In
+          magick.css, forms are styled to stand out, grabbing the user's
+          attention. To stay within the established design, this is achieved by
+          giving forms a handwritten, paper note feel:
+        </p>
+        <form>
+          <label for="nameInput">Name:</label>
+          <input type="text" id="nameInput" name="name" placeholder="Myrddin Ambrosius">
+          <label for="schoolInput">Practiced Schools:</label>
+          <input type="text" id="schoolInput" name="school" placeholder="Illusion, Evocation, ...">
+          <label for="messageTextarea">Message:</label>
+          <textarea id="messageTextarea" name="message"></textarea>
+          <fieldset>
+            <legend>Radio Buttons</legend>
+            <input type="radio" id="radio1" name="radio" value="radio1">
+            <label for="radio1">Radio 1</label>
+            <input type="radio" id="radio2" name="radio" value="radio2">
+            <label for="radio2">Radio 2</label>
+          </fieldset>
+          <fieldset>
+            <legend>Checkboxes</legend>
+            <label for="checkbox1">Checkbox 1</label>
+            <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+            <label for="checkbox2">Checkbox 2</label>
+            <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+          </fieldset>
+          <button type="submit">Submit</button>
+          <button type="reset" disabled>Reset</button>
+        </form>
+      </section>
+
+      <section id="media-and-figures">
+        <h2>Media & Figures</h2>
+        <p>
+          Media elements such as images and video can stand alone or be
+          presented as a figure, giving structure and elegance to your content,
+          and an opportunity to add context using a caption.
+        </p>
+        <h3>Standalone</h3>
+        <aside>
+          Floating images are not taken into account by magick.css, as they
+          look best when used with justified text, which magick.css does not do.
+        </aside>
+        <p>
+          Let's start with a standalone <code>&lt;img&gt;</code> element.
+          It will not be stretched or distorted, but will be displayed at its
+          natural size; as long as enough space is available:
+        </p>
+        <img src="https://picsum.photos/640/480?grayscale&random=1" alt="an example, depicting a random subject">
+        <h3>In a Figure</h3>
+        <p>
+          Using a <code>&lt;figure&gt;</code> element, we can display the media
+          element more prominently, and can also add a caption using a <code>&lt;figcaption&gt;</code> tag:
+        </p>
+        <figure>
+          <img src="https://picsum.photos/640/480?grayscale&random=2" alt="an example, depicting a random subject">
+          <figcaption>This is the figure caption, is usually provides context.</figcaption>
+        </figure>
+      </section>
+
+      <section id="code-quotes-and-preformatting">
+        <h2>Code, Quotes and Preformatting</h2>
+        <h3>Code</h3>
+        <p>
+          Displaying code can be done either inline or in a distinct block. To
+          inline code, use the <code>&lt;code&gt;</code> tag. For larger pieces of
+          code, use <code>&lt;pre&gt;</code> to wrap the
+          <code>&lt;code&gt;</code> tag. By the way, you can also use figures to
+          display code snippets!
+        </p>
+        <figure>
+          <pre><span class="line-number"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></span><code>void fib(int x) {
+    unsigned long a = 0, b = 1, c;
+    for(int i = 0; i < x; i++) {
+        printf("%lu ", a);
+        c = a + b;
+        a = b;
+        b = c;
+    }
+}</code></pre>
+          <fibcaption>This C function generates numbers of the fibonacci sequence.</fibcaption>
+        </figure>
+        <p>
+          (Line numbering of code requires some extra preprocessing of the
+          content, but it is quite simple to do, even just by hand. Find out
+          how in the <a href="#extras">Extras</a> section.)
+        </p>
+
+        <h3>Quotes</h3>
+        <p>
+          For quotes, use the <code>&lt;blockquote&gt;</code> tag. Depending on
+          the content, you might want to use preformatted text or let the
+          browser handle the formatting:
+        </p>
+        <blockquote>
+          <p>
+            It was a bright cold day in April, and the clocks were striking thirteen.
+          </p>
+          <footer>
+            George Orwell,
+            <cite>1984</cite>
+          </footer>
+        </blockquote>
+        <p>
+          Adding a citation is done using a <code>&lt;footer&gt;</code> inside
+          the blockquote. Just look at the source code of this page to see how
+          it's done!
+        </p>
+        <p>
+          Let's now consider a poem, where the formatting is imporant and can't be
+          dynamically determined by the browser. In this case, we wrap the poem
+          contents in a <code>&lt;pre&gt;</code> tag:
+        </p>
+        <blockquote>
+          <pre><p>The angels, not half so happy in Heaven,
+   Went envying her and me— 
+Yes!— that was the reason (as all men know,
+   In this kingdom by the sea)
+That the wind came out of a cloud, chilling
+   And killing my Annabel Lee.</p></pre>
+          <footer>
+            Excerpt from <cite>Annabel Lee</cite> by Edgar Allan Poe
+          </footer>
+        </blockquote>
+      </section>
+
+      <section id="extras">
+        <h2>Extras</h2>
+        There are some extra features that you can use with magick.css. These
+        require special classes and are therefore not part of magic.css's main
+        features. This section will show you what extra features are available,
+        and how to use them.
+        <h3>Sidenotes & Auto Numbering</h3>
+        <p>
+          Sidenotes<span class="sidenote-anchor"></span><span
+            class="sidenote">This is a sidenote! On mobile devices, it gets
+            pushed into the main column.</span> are a great way to add additional
+          information to your content.
+          To add a sidenote in your text, two things need to be done:
+        </p>
+        <ul>
+          <li>
+            Add an anchor where the sidenote refers from:<br>
+            <code>&lt;span class=&quot;sidenote-anchor&quot;&gt;&lt;/span&gt;</code>
+          </li>
+          <li>
+            Add the sidenote itself, right after the anchor:<br>
+              <code>&lt;span class=&quot;sidenote&quot;&gt;Sidenote Content.&lt;/span&gt;</code>
+          </li>
+        </ul>
+        <h3>Code/Pre Line Numbers</h3>
+        <p>
+          To display line numbers in code/pre blocks, You need to insert a
+          <code>&lt;span&gt;</code> for each line, containing the line number.
+          Depending on your preferences, this can be done by hand, using
+          JavaScript, or on the server side. Here is an example:
+        </p>
+        <pre><span class="line-number"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></span><code>#include <stdio.h>
+int main() {
+   printf("Hello, World!");
+   return 0;
+}</code></pre>
+        <p>Which is achieved by this source code:</p>
+        <pre><code>&lt;pre&gt;&lt;span class=&quot;line-number&quot;&gt;&lt;span&gt;1&lt;/span&gt;&lt;span&gt;2&lt;/span&gt;&lt;span&gt;3&lt;/span&gt;&lt;span&gt;4&lt;/span&gt;&lt;span&gt;5&lt;/span&gt;&lt;/span&gt;&lt;code&gt;#include &lt;stdio.h&gt;
+int main() {
+    printf("Hello, World!");
+    return 0;
+}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+      </section>
+
+      <section id="thats-it">
+        <h2>That's it!</h2>
+        <p>
+          I hope I could interest you in using magick.css.
+          If you like what you see, please consider giving it a star on <a
+            href="https://github.com/wintermute-cell/magick.css">GitHub</a>. It
+          costs nothing and shows me that <strong>someone cares</strong>!
+        </p>
+        <p>
+          Should you be interested in what other things I build, join my <a
+            href="https://discord.gg/f8nyyK4ngZ">Discord</a>!
+        </p>
+      </section>
+
+      <footer>
+        <hr>
+        <p>Made by <a href="https://github.com/wintermute-cell">winterveil</a></p>
+        <p>
+          <a href="https://mastodon.social/@winterveil">Mastodon</a>,
+          <a href="https://twitter.com/winterveil_dev">Twitter</a>,
+          <a href="https://winterveil.itch.io/">Itch.io</a>,
+          <a href="https://www.linkedin.com/in/julius-kawatziklis/">LinkedIn</a>,
+          <a href="https://www.youtube.com/@winterveil-dev">YouTube</a>,
+          <a href="mailto:winterveil.dev@gmail.com">winterveil.dev@gmail.com</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
