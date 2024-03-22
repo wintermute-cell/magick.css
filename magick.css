@@ -239,11 +239,14 @@ header h1:after {
 /*
     1) Remove any list symbols.
     2) Center align the nav links.
+    3) Add a margin to the top of the nav links.
+    4) Remove the default padding from the list.
 */
 header nav ul {
     list-style-type: none; /* 1 */
     text-align: center; /* 2 */
-    margin-top: 1.0rem;
+    margin-top: 1.0rem; /* 3 */
+    padding-inline-start: 0; /* 4 */
 }
 
 /* Display the navigation links as a centered, horizontal list. */
