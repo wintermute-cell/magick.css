@@ -20,7 +20,7 @@ You can find a live example of magick.css being used [on my
 website](https://css.winterveil.net)!
 
 ## How do I use magick.css?
-> magick.css is build with
+> magick.css is built with
 > [normalize.css](https://necolas.github.io/normalize.css/). While it will look
 > 90% correct without, it is recommended to use normalize.css.
 
