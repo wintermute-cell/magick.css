@@ -53,9 +53,10 @@ html {
 }
 
 /*
-    1) Set the base font-size to 20px with a normal weight.
+    1) Set the base font-size to 18px with a normal weight.
     2) Set the text and background colors to match the theme.
     3) Use the 'Averia Serif Libre' font for the body text.
+    4) Reset the counter for sidenotes.
 */
 body {
     font-size: 1.8rem; /* 1 */
@@ -66,7 +67,7 @@ body {
     line-height: 2.2rem; /* 3 */
     font-weight: 300; /* 3 */
 
-    counter-reset: sidenote-counter;
+    counter-reset: sidenote-counter; /* 4 */
 }
 
 /*
