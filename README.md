@@ -5,6 +5,9 @@
 <img alt="a wizard" src="wizard.webp" width="240" height="240">
 
 ### Translations
+
+- [中文 (Simplified Chinese)](./translations/zh-CN.md)
+
 > Feel free to contribute a translation to your language!
 
 ## What is magick.css?
