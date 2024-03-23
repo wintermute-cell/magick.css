@@ -6,7 +6,7 @@
 
 ### Translations
 
-<p><a href="./translations/zh-CN.md">中文</a></p>
+- [中文 (Simplified Chinese)](./translations/zh-CN.md)
 
 > Feel free to contribute a translation to your language!
 
