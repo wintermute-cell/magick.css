@@ -220,10 +220,10 @@ h4 {
 /* A uniquely styled h1 for the header */
 header h1 {
     font-size: 4rem;
-    line-height: 1.5rem;
     color: var(--fg);
     text-align: center;
     padding: 4rem 0 1.2rem 0;
+    margin-bottom: 1rem;
 }
 
 /* Additional decorations for the header h1 */
