@@ -1,6 +1,7 @@
 # magick.css
 > magically playful, yet simple styling. all in one file.
 
+<p align="center"><a href="./translations/zh-CN/README.md">中文版</a></p>
 <br>
 <img alt="a wizard" src="wizard.webp" width="240" height="240">
 
