@@ -59,13 +59,12 @@ html {
 */
 body {
     font-size: 1.8rem; /* 1 */
-    font-weight: 400; /* 1 */
     background-color: var(--bg); /* 2 */
     color: var(--fg); /* 2 */
     font-family: "Averia Serif Libre", serif; /* 3 */
     font-style: normal; /* 3 */
-    font-weight: 300; /* 3 */
     line-height: 2.2rem; /* 3 */
+    font-weight: 300; /* 3 */
 
     counter-reset: sidenote-counter;
 }
