@@ -4,6 +4,9 @@
 <br>
 <img alt="a wizard" src="wizard.webp" width="240" height="240">
 
+### Translations
+> Feel free to contribute a translation to your language!
+
 ## What is magick.css?
 magick.css is a minimalistic, (mostly) classless CSS framework that is designed
 to be easy to use and easy to understand. It is contained in a single file, and
