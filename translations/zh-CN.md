@@ -2,7 +2,7 @@
 > 神奇的可玩性，但简单的样式。全部在一个文件中。
 
 <br>
-<img alt="一个巫师" src="wizard.webp" width="240" height="240">
+<img alt="一个巫师" src="../wizard.webp" width="240" height="240">
 
 ## 什么是magick.css？
 magick.css是一个极简主义的，（主要）无类CSS框架，设计得易于使用和理解。它包含在一个文件中，每一个选择都有注释。目标是实现优雅，但神奇的嬉戏外观，同时最大化可读性和传达信息的能力；*有点像巫师的笔记*。
@@ -11,6 +11,8 @@ magick.css是一个极简主义的，（主要）无类CSS框架，设计得易�
 
 ## 它看起来像什么？
 你可以在我的[网站](https://css.winterveil.net)上找到一个使用magick.css的实例！
+
+> 点击网站上的语言图标切换为中文
 
 ## 我如何使用magick.css？
 > magick.css是用[normalize.css](https://necolas.github.io/normalize.css/)构建的。虽然没有它看起来也有90%的正确，但建议使用normalize.css。
