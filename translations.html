@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- For the robots -->
+    <meta charset="UTF-8">
+    <meta name="description" content="magick.css is magically playful, yet simple styling. all in one file." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://css.winterveil.net">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+
+    <title>magick.css</title>
+
+    <!-- For the humans -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="book-header.css">
+    <link rel="stylesheet" href="magick.min.css">
+
+    <!-- This site contains some specific styles for the content, which are not part of magick.css -->
+    <style>
+    header {
+      margin-bottom: 2em;
+    }
+
+    .typography-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Adjust the space between columns as needed */
+    }
+
+    .typography-columns > div {
+      flex: 1; /* Allows each child div to grow equally */
+      min-width: 250px; /* Prevents the columns from getting too narrow before stacking */
+    }
+
+    @media (max-width: 600px) {
+      .typography-columns {
+      flex-direction: column;
+    }
+    </style>
+
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Translations</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Back to English</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="translation-list">
+        <ul>
+          <!-- Example translation entry -->
+          <!-- Self attribution is not required, but you're welcome to link your github if you'd like -->
+          <!--
+          <li>
+            <a href="translations/some-lang.html">NATIVE_NAME (ENGLISH_NAME)</a>
+            by <a href="https://github.com/YOUR-USER">YOUR-USER</a>
+          </li>
+          -->
+          <li>
+            <a href="translations/zh-CN/index.html">Simplified Chinese</a>
+            by <a href="https://github.com/xxnuo">xxnuo</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
