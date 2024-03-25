@@ -63,3 +63,23 @@ import 'normalize.css'
 import 'magick.css'
 ```
 
+## Ports
+magick.css currently also available as...
+
+### Obsidian.md Theme
+> I don't like the hoops theme developers have to jump through to publish their
+> work on the official theme gallery of a proprietary, monetized product. There
+> is no compensation for their hard work beyond the donations of generous
+> users; all the while Obsidian.md benefits greatly from them. That's why the
+> Obsidian.md theme version of magick.css is not available in the official
+> gallery.
+
+Still, Obsidian.md is a useful tool for a lot of people. That's why I've made
+the effort to port this CSS framework to Obsidian.md. You can install it by...
+
+1. Downloading `ports/obsidian.md/magick.css.zip` from this repo.
+2. Unpacking it into the Obsidian.md theme directory. You can find this
+   directory by pressing the folder icon next to the `Appearance > Themes`
+   setting inside of Obsidian.md
+3. If the theme is not immediately selectable, try restarting Obsidian.md to
+   refresh.
