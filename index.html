@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="book-header.css">
     <link rel="stylesheet" href="magick.min.css">
 
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+
     <!-- This site contains some specific styles for the content, which are not part of magick.css -->
     <style>
     header {
@@ -52,7 +54,7 @@
     </style>
 
   </head>
-  <body>
+  <body hx-boost="true">
     <main>
       <header>
         <h1>magick.css</h1>
