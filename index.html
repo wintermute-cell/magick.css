@@ -2,69 +2,120 @@
 <html lang="en">
   <head>
     <!-- For the robots -->
-    <meta charset="UTF-8">
-    <meta name="description" content="magick.css is magically playful, yet simple styling. all in one file." />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://css.winterveil.net">
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="magick.css is magically playful, yet simple styling. all in one file."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://css.winterveil.net" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <title>magick.css</title>
 
     <!-- For the humans -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="book-header.css">
-    <link rel="stylesheet" href="magick.min.css">
-
-    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="book-header.css" />
+    <link rel="stylesheet" href="magick.min.css" />
 
     <!-- This site contains some specific styles for the content, which are not part of magick.css -->
     <style>
-    header {
-      margin-bottom: 2em;
-    }
+      header {
+        margin-bottom: 2em;
+      }
 
-    .typography-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px; /* Adjust the space between columns as needed */
-    }
-
-    .typography-columns > div {
-      flex: 1; /* Allows each child div to grow equally */
-      min-width: 250px; /* Prevents the columns from getting too narrow before stacking */
-    }
-
-    @media (max-width: 600px) {
       .typography-columns {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Adjust the space between columns as needed */
       }
-    }
 
-    @media (prefers-color-scheme: dark) {
-      header nav ul li img {
-        filter: invert(1);
+      .typography-columns > div {
+        flex: 1; /* Allows each child div to grow equally */
+        min-width: 250px; /* Prevents the columns from getting too narrow before stacking */
       }
-    }
+
+      @media (max-width: 600px) {
+        .typography-columns {
+          flex-direction: column;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        header nav ul li img {
+          filter: invert(1);
+        }
+      }
     </style>
-
   </head>
   <body hx-boost="true">
     <main>
       <header>
         <h1>magick.css</h1>
-        <p style="text-align: center; margin-top:-2.3rem; margin-bottom:-0.2rem; margin-left:-15rem; font-size: 1.4rem">by <a href="https://github.com/wintermute-cell/" target="_blank">winterveil</a></p>
+        <p
+          style="
+            text-align: center;
+            margin-top: -2.3rem;
+            margin-bottom: -0.2rem;
+            margin-left: -15rem;
+            font-size: 1.4rem;
+          "
+        >
+          by
+          <a href="https://github.com/wintermute-cell/" target="_blank"
+            >winterveil</a
+          >
+        </p>
         <nav>
           <ul>
-            <li><a target="_blank" href="https://github.com/wintermute-cell/magick.css">Github</a></li>
-            <li><a target="_blank" href="https://discord.gg/f8nyyK4ngZ">Discord</a></li>
-            <li><a target="_blank" href="https://www.buymeacoffee.com/winterv">Donate</a></li>
-            <li><a href="translations.html"><img src="translate.svg" style="width:2.3rem; margin:0 0 -0.4rem 0;" alt="translations"></a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://github.com/wintermute-cell/magick.css"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://discord.gg/f8nyyK4ngZ"
+                >Discord</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="https://www.buymeacoffee.com/winterv"
+                >Donate</a
+              >
+            </li>
+            <li>
+              <a href="translations.html"
+                ><img
+                  src="translate.svg"
+                  style="width: 2.3rem; margin: 0 0 -0.4rem 0"
+                  alt="translations"
+              /></a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -72,61 +123,63 @@
       <section id="fundamentals">
         <blockquote>
           <p>
-          In the grand compendium of universal knowledge, it is universally
-          acknowledged that the scribbles of a wizard not only transcend the
-          mundane but are, without a shadow of a doubt, the most exhilarating
-          form of notation known to humanoid kind. For who could resist the
-          allure of a well-placed spell in the margins?
+            In the grand compendium of universal knowledge, it is universally
+            acknowledged that the scribbles of a wizard not only transcend the
+            mundane but are, without a shadow of a doubt, the most exhilarating
+            form of notation known to humanoid kind. For who could resist the
+            allure of a well-placed spell in the margins?
           </p>
-          <footer>Albus Greybeard, <cite>On the Virtues of Mystical Marginalia</cite>, 1132</footer>
+          <footer>
+            Albus Greybeard, <cite>On the Virtues of Mystical Marginalia</cite>,
+            1132
+          </footer>
         </blockquote>
         <h2>Fundamentals</h2>
         <p>
-          magick.css is a minimalistic, (mostly) classless CSS framework that
-          is designed to be easy to use and easy to understand. It is contained
-          in a single file, and every choice is commented. The goal is to
-          achieve an elegant, but magically playful look, while maximizing
-          readability and the ability to convey information; <em>somewhat akin
-            to the notes of a wizard</em>.
+          magick.css is a minimalistic, (mostly) classless CSS framework that is
+          designed to be easy to use and easy to understand. It is contained in
+          a single file, and every choice is commented. The goal is to achieve
+          an elegant, but magically playful look, while maximizing readability
+          and the ability to convey information;
+          <em>somewhat akin to the notes of a wizard</em>.
         </p>
         <p>
-          The framework retains its beauty and functionality across <strong>all
-            devices</strong> and screen sizes, and works entirely
-          <strong>without JavaScript</strong>. It is inspired by <a
-            href="https://www.latex-project.org/" target="_blank">LaTeX</a>,
-          old school TTRPG rulebooks, CSS frameworks like <a
-            href="https://concrete.style/" target="_blank">concrete.css</a> and
-          <a href="https://edwardtufte.github.io/tufte-css/"
-            target="_blank">Tufte CSS</a> and the "usability as design" ethic of
-          brutalism.
+          The framework retains its beauty and functionality across
+          <strong>all devices</strong> and screen sizes, and works entirely
+          <strong>without JavaScript</strong>. It is inspired by
+          <a href="https://www.latex-project.org/" target="_blank">LaTeX</a>,
+          old school TTRPG rulebooks, CSS frameworks like
+          <a href="https://concrete.style/" target="_blank">concrete.css</a> and
+          <a href="https://edwardtufte.github.io/tufte-css/" target="_blank"
+            >Tufte CSS</a
+          >
+          and the "usability as design" ethic of brutalism.
         </p>
       </section>
 
       <section id="howto">
         <h2>How to use magick.css</h2>
         <aside>
-          magick.css works best with <a
-            href="https://necolas.github.io/normalize.css/">normalize.css</a>,
+          magick.css works best with
+          <a href="https://necolas.github.io/normalize.css/">normalize.css</a>,
           using it is strongly recommended!
         </aside>
         <p>
-          The easiest way to check out magick.css for your own project is to add it from
-          a CDN. Just add these two lines to your html <code>&lt;head&gt;</code>:
+          The easiest way to check out magick.css for your own project is to add
+          it from a CDN. Just add these two lines to your html
+          <code>&lt;head&gt;</code>:
         </p>
         <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/normalize.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/magick.css&quot;&gt;</code></pre>
         <p>
-          You could also just download the magick.css file from this repo, and include
-          it into your html <code>&lt;head&gt;</code> as you normally would:
+          You could also just download the magick.css file from this repo, and
+          include it into your html <code>&lt;head&gt;</code> as you normally
+          would:
         </p>
         <pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/magick.css&quot;&gt;</code></pre>
-        <p>
-          You could also add magick.css to your JS project like this:
-        </p>
+        <p>You could also add magick.css to your JS project like this:</p>
         <pre><code>npm install normalize.css magick.css</code></pre>
-        <p>
-          And import them in your code:
-        </p>
+        <p>And import them in your code:</p>
         <pre><code>import 'normalize.css'
 import 'magick.css'</code></pre>
         <p>
@@ -143,7 +196,9 @@ import 'magick.css'</code></pre>
           all of your content in <code>&lt;main&gt;</code> tags, and then use
           <code>&lt;section&gt;</code> tags to break up long form content
           content into sections. This page is a good example of how to do this.
-        <p>
+        </p>
+
+        <p></p>
         <p>
           (You could of course just ignore this advice and use magick.css for
           typography and styled components only.)
@@ -167,7 +222,9 @@ import 'magick.css'</code></pre>
           To add tangential information, magick.css uses the
           <code>&lt;aside&gt;</code> tag. You will find it used from time to
           time on this page. Should you want to elaborate on a point, or provide
-          additional context, you can use magick.css's sidenotes.<span class="sidenote-anchor"></span>
+          additional context, you can use magick.css's sidenotes.<span
+            class="sidenote-anchor"
+          ></span>
           <span class="sidenote">Sidenotes are automagically numbered!</span>
           You can find out more about this in the <a href="#extras">Extras</a>
           section below.
@@ -176,10 +233,8 @@ import 'magick.css'</code></pre>
 
       <section id="typography">
         <h2>Typography</h2>
-        <p>
-          Here is a showcase of the typography that magick.css offers:
-        </p>
-        <br>
+        <p>Here is a showcase of the typography that magick.css offers:</p>
+        <br />
         <div class="typography-columns">
           <div>
             <h1>Heading 1: A title bold and grand, the story's gate.</h1>
@@ -198,7 +253,7 @@ import 'magick.css'</code></pre>
             <p>Typography's spell, now complete.</p>
           </div>
         </div>
-        <br>
+        <br />
         <p>
           Headings below <code>&lt;h4&gt;</code> are not styled by magick.css;
           they are usually not needed for hierarchical structuring, but instead
@@ -207,13 +262,16 @@ import 'magick.css'</code></pre>
         </p>
         <blockquote>
           <p>
-            [It is] notable that the Feynman lectures [...] write
-            about all of physics in 1800 pages, using only 2 levels of
-            hierarchical headings: chapters and A-level heads in the text.
+            [It is] notable that the Feynman lectures [...] write about all of
+            physics in 1800 pages, using only 2 levels of hierarchical headings:
+            chapters and A-level heads in the text.
           </p>
           <footer>
-            <a href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
-              Edward Tufte, forum post, <cite>‘Book design: advice and examples’ thread</cite>
+            <a
+              href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB"
+            >
+              Edward Tufte, forum post,
+              <cite>‘Book design: advice and examples’ thread</cite>
             </a>
           </footer>
         </blockquote>
@@ -222,28 +280,26 @@ import 'magick.css'</code></pre>
       <section id="structured-content">
         <h2>Structured Content</h2>
         <h3>Lists</h3>
-        <p>
-          Lists are kept simple, as to not distract from the content:
-        </p>
+        <p>Lists are kept simple, as to not distract from the content:</p>
         <ul>
           <li>This is...</li>
           <li>... an unordered list.</li>
         </ul>
-        <br>
+        <br />
         <ol>
           <li>This is...</li>
           <li>... an ordered list.</li>
         </ol>
-        <br>
+        <br />
         <dl>
           <dt>And this weird fellow here...</dt>
           <dd>... is a description list.</dd>
         </dl>
-        <br>
+        <br />
         <h3>Tables</h3>
         <p>
-          In a similar manner to lists, tables are clear and concise,
-          directing reader focus to the data at hand:
+          In a similar manner to lists, tables are clear and concise, directing
+          reader focus to the data at hand:
         </p>
         <table>
           <thead>
@@ -257,31 +313,30 @@ import 'magick.css'</code></pre>
             <tr>
               <td>Glow Dew</td>
               <td>Bioluminescent algae (81mg)</td>
-              <td style="text-align:center;font-weight:500;">🜼</td>
+              <td style="text-align: center; font-weight: 500">🜼</td>
             </tr>
             <tr>
               <td>Float Leaf</td>
               <td>Dandelion puff (61mg)</td>
-              <td style="text-align:center;font-weight:500;">🝆</td>
+              <td style="text-align: center; font-weight: 500">🝆</td>
             </tr>
             <tr>
               <td>Might Brew</td>
               <td>Ginseng root (78mg)</td>
-              <td style="text-align:center;font-weight:500;">🝀</td>
+              <td style="text-align: center; font-weight: 500">🝀</td>
             </tr>
             <tr>
               <td>Vanish Draft</td>
               <td>Mimosa pudica (26mg)</td>
-              <td style="text-align:center;font-weight:500;">🜞</td>
+              <td style="text-align: center; font-weight: 500">🜞</td>
             </tr>
             <tr>
               <td>Remembrance Tea</td>
               <td>Ginkgo biloba (39mg)</td>
-              <td style="text-align:center;font-weight:500;">🜇</td>
+              <td style="text-align: center; font-weight: 500">🜇</td>
             </tr>
           </tbody>
         </table>
-
       </section>
 
       <section id="forms-and-input">
@@ -297,31 +352,52 @@ import 'magick.css'</code></pre>
           Free standing text inputs are not opinionated in regards to their size
           or placement, as their use can vary greatly. Here are some examples:
         </p>
-        <input style="display:block;" type="text" placeholder="I am a text input.">
-        <input style="display:block;" type="text" placeholder="I am disabled." disabled>
+        <input
+          style="display: block"
+          type="text"
+          placeholder="I am a text input."
+        />
+        <input
+          style="display: block"
+          type="text"
+          placeholder="I am disabled."
+          disabled
+        />
         <textarea placeholder="I am a textarea."></textarea>
 
         <h3>Checkboxes & Radio Buttons</h3>
         <p>
           Labels for checkboxes and radio buttons are expected <em>after</em>
           the input element. This way, magick.css can ensure proper grouped
-          spacing between them, without requiring additional wrappers and classes.
+          spacing between them, without requiring additional wrappers and
+          classes.
         </p>
-        <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+        <input
+          type="checkbox"
+          id="checkbox1"
+          name="checkbox1"
+          value="checkbox1"
+        />
         <label for="checkbox1">I am a checkbox.</label>
-        <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2" disabled>
+        <input
+          type="checkbox"
+          id="checkbox2"
+          name="checkbox2"
+          value="checkbox2"
+          disabled
+        />
         <label for="checkbox2">I am disabled.</label>
-        <br>
-        <input type="radio" id="radio1" name="radio" value="radio1">
+        <br />
+        <input type="radio" id="radio1" name="radio" value="radio1" />
         <label for="radio1">I am a radio button.</label>
-        <input type="radio" id="radio2" name="radio" value="radio2" disabled>
+        <input type="radio" id="radio2" name="radio" value="radio2" disabled />
         <label for="radio2">I am disabled.</label>
         <p></p>
         <fieldset>
           <legend>Fieldset</legend>
-          <input type="radio" id="radio3" name="radio2">
+          <input type="radio" id="radio3" name="radio2" />
           <label for="radio3">I am some option.</label>
-          <input type="radio" id="radio4" name="radio2">
+          <input type="radio" id="radio4" name="radio2" />
           <label for="radio4">I am another option.</label>
         </fieldset>
 
@@ -334,23 +410,43 @@ import 'magick.css'</code></pre>
         </p>
         <form>
           <label for="nameInput">Name:</label>
-          <input type="text" id="nameInput" name="name" placeholder="Myrddin Ambrosius">
+          <input
+            type="text"
+            id="nameInput"
+            name="name"
+            placeholder="Myrddin Ambrosius"
+          />
           <label for="schoolInput">Practiced Schools:</label>
-          <input type="text" id="schoolInput" name="school" placeholder="Illusion, Evocation, ...">
+          <input
+            type="text"
+            id="schoolInput"
+            name="school"
+            placeholder="Illusion, Evocation, ..."
+          />
           <label for="messageTextarea">Message:</label>
           <textarea id="messageTextarea" name="message"></textarea>
           <fieldset>
             <legend>Radio Buttons</legend>
-            <input type="radio" id="radio5" name="radio" value="radio5">
+            <input type="radio" id="radio5" name="radio" value="radio5" />
             <label for="radio5">Radio 1</label>
-            <input type="radio" id="radio6" name="radio" value="radio6">
+            <input type="radio" id="radio6" name="radio" value="radio6" />
             <label for="radio6">Radio 2</label>
           </fieldset>
           <fieldset>
             <legend>Checkboxes</legend>
-            <input type="checkbox" id="checkbox3" name="checkbox3" value="checkbox3">
+            <input
+              type="checkbox"
+              id="checkbox3"
+              name="checkbox3"
+              value="checkbox3"
+            />
             <label for="checkbox3">Checkbox 1</label>
-            <input type="checkbox" id="checkbox4" name="checkbox4" value="checkbox4">
+            <input
+              type="checkbox"
+              id="checkbox4"
+              name="checkbox4"
+              value="checkbox4"
+            />
             <label for="checkbox4">Checkbox 2</label>
           </fieldset>
           <button type="submit">Submit</button>
@@ -367,23 +463,34 @@ import 'magick.css'</code></pre>
         </p>
         <h3>Standalone</h3>
         <aside>
-          Floating images are not taken into account by magick.css, as they
-          look best when used with justified text, which magick.css does not do.
+          Floating images are not taken into account by magick.css, as they look
+          best when used with justified text, which magick.css does not do.
         </aside>
         <p>
-          Let's start with a standalone <code>&lt;img&gt;</code> element.
-          It will not be stretched or distorted, but will be displayed at its
+          Let's start with a standalone <code>&lt;img&gt;</code> element. It
+          will not be stretched or distorted, but will be displayed at its
           natural size; as long as enough space is available:
         </p>
-        <img loading="lazy" src="https://picsum.photos/640/480?grayscale&random=1" alt="an example, depicting a random subject">
+        <img
+          loading="lazy"
+          src="https://picsum.photos/640/480?grayscale&random=1"
+          alt="an example, depicting a random subject"
+        />
         <h3>In a Figure</h3>
         <p>
           Using a <code>&lt;figure&gt;</code> element, we can display the media
-          element more prominently, and can also add a caption using a <code>&lt;figcaption&gt;</code> tag:
+          element more prominently, and can also add a caption using a
+          <code>&lt;figcaption&gt;</code> tag:
         </p>
         <figure>
-          <img loading="lazy" src="https://picsum.photos/640/480?grayscale&random=2" alt="an example, depicting a random subject">
-          <figcaption>This is the figure caption, it usually provides context.</figcaption>
+          <img
+            loading="lazy"
+            src="https://picsum.photos/640/480?grayscale&random=2"
+            alt="an example, depicting a random subject"
+          />
+          <figcaption>
+            This is the figure caption, it usually provides context.
+          </figcaption>
         </figure>
       </section>
 
@@ -392,8 +499,8 @@ import 'magick.css'</code></pre>
         <h3>Code</h3>
         <p>
           Displaying code can be done either inline or in a distinct block. To
-          inline code, use the <code>&lt;code&gt;</code> tag. For larger pieces of
-          code, use <code>&lt;pre&gt;</code> to wrap the
+          inline code, use the <code>&lt;code&gt;</code> tag. For larger pieces
+          of code, use <code>&lt;pre&gt;</code> to wrap the
           <code>&lt;code&gt;</code> tag. By the way, you can also use figures to
           display code snippets!
         </p>
@@ -407,12 +514,14 @@ import 'magick.css'</code></pre>
         b = c;
     }
 }</code></pre>
-          <figcaption>This C function generates numbers of the fibonacci sequence.</figcaption>
+          <figcaption>
+            This C function generates numbers of the fibonacci sequence.
+          </figcaption>
         </figure>
         <p>
           (Line numbering of code requires some extra preprocessing of the
-          content, but it is quite simple to do, even just by hand. Find out
-          how in the <a href="#extras">Extras</a> section.)
+          content, but it is quite simple to do, even just by hand. Find out how
+          in the <a href="#extras">Extras</a> section.)
         </p>
 
         <h3>Quotes</h3>
@@ -423,7 +532,8 @@ import 'magick.css'</code></pre>
         </p>
         <blockquote>
           <p>
-            It was a bright cold day in April, and the clocks were striking thirteen.
+            It was a bright cold day in April, and the clocks were striking
+            thirteen.
           </p>
           <footer>
             George Orwell,
@@ -436,9 +546,9 @@ import 'magick.css'</code></pre>
           it's done!
         </p>
         <p>
-          Let's now consider a poem, where the formatting is imporant and can't be
-          dynamically determined by the browser. In this case, we wrap the poem
-          contents in a <code>&lt;pre&gt;</code> tag:
+          Let's now consider a poem, where the formatting is imporant and can't
+          be dynamically determined by the browser. In this case, we wrap the
+          poem contents in a <code>&lt;pre&gt;</code> tag:
         </p>
         <blockquote>
           <pre><p>The angels, not half so happy in Heaven,
@@ -461,20 +571,27 @@ That the wind came out of a cloud, chilling
         and how to use them.
         <h3>Sidenotes & Auto Numbering</h3>
         <p>
-          Sidenotes<span class="sidenote-anchor"></span><span
-            class="sidenote">This is a sidenote! On mobile devices, it gets
-            pushed into the main column.</span> are a great way to add additional
-          information to your content.
-          To add a sidenote in your text, two things need to be done:
+          Sidenotes<span class="sidenote-anchor"></span
+          ><span class="sidenote"
+            >This is a sidenote! On mobile devices, it gets pushed into the main
+            column.</span
+          >
+          are a great way to add additional information to your content. To add
+          a sidenote in your text, two things need to be done:
         </p>
         <ul>
           <li>
-            Add an anchor where the sidenote refers from:<br>
-            <code>&lt;span class=&quot;sidenote-anchor&quot;&gt;&lt;/span&gt;</code>
+            Add an anchor where the sidenote refers from:<br />
+            <code
+              >&lt;span class=&quot;sidenote-anchor&quot;&gt;&lt;/span&gt;</code
+            >
           </li>
           <li>
-            Add the sidenote itself, right after the anchor:<br>
-              <code>&lt;span class=&quot;sidenote&quot;&gt;Sidenote Content.&lt;/span&gt;</code>
+            Add the sidenote itself, right after the anchor:<br />
+            <code
+              >&lt;span class=&quot;sidenote&quot;&gt;Sidenote
+              Content.&lt;/span&gt;</code
+            >
           </li>
         </ul>
         <h3>Code/Pre Line Numbers</h3>
@@ -500,29 +617,32 @@ int main() {
       <section id="thats-it">
         <h2>That's it!</h2>
         <p>
-          I hope I could interest you in using magick.css.
-          If you like what you see, please consider giving it a star on <a
-            href="https://github.com/wintermute-cell/magick.css">GitHub</a>. It
+          I hope I could interest you in using magick.css. If you like what you
+          see, please consider giving it a star on
+          <a href="https://github.com/wintermute-cell/magick.css">GitHub</a>. It
           costs nothing and shows me that <strong>someone cares</strong>!
         </p>
         <p>
-          Should you be interested in what other things I build, join my <a
-            href="https://discord.gg/f8nyyK4ngZ">Discord</a>!
+          Should you be interested in what other things I build, join my
+          <a href="https://discord.gg/f8nyyK4ngZ">Discord</a>!
         </p>
       </section>
 
       <footer>
-        <hr>
-        <p>Made by <a href="https://github.com/wintermute-cell">winterveil</a></p>
+        <hr />
+        <p>
+          Made by <a href="https://github.com/wintermute-cell">winterveil</a>
+        </p>
         <p>
           <a href="https://mastodon.social/@winterveil">Mastodon</a>,
           <a href="https://twitter.com/winterveil_dev">Twitter</a>,
           <a href="https://winterveil.itch.io/">Itch.io</a>,
-          <a href="https://www.linkedin.com/in/julius-kawatziklis/">LinkedIn</a>,
-          <a href="https://www.youtube.com/@winterveil-dev">YouTube</a>,
+          <a href="https://www.linkedin.com/in/julius-kawatziklis/">LinkedIn</a
+          >, <a href="https://www.youtube.com/@winterveil-dev">YouTube</a>,
           <a href="mailto:winterveil.dev@gmail.com">winterveil.dev@gmail.com</a>
         </p>
       </footer>
     </main>
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
   </body>
 </html>
