@@ -24,7 +24,8 @@
   "author": "winterveil",
   "license": "MIT",
   "files": [
-    "magick.css"
+    "magick.css",
+    "magick.min.css"
   ],
   "bugs": {
     "url": "https://github.com/wintermute-cell/magick.css/issues"
