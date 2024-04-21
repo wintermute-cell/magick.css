@@ -42,6 +42,12 @@ a CDN. Just add these two lines to your html `<head>`:
 <link rel="stylesheet" href="https://unpkg.com/magick.css">
 ```
 
+Or for the minified variants:
+```html
+<link rel="stylesheet" href="https://unpkg.com/normalize.min.css">
+<link rel="stylesheet" href="https://unpkg.com/magick.min.css">
+```
+
 ### Local File
 You could also just download the `magick.css` file from this repo, and include
 it into your html `<head>` as you normally would:
