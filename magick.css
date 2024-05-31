@@ -242,7 +242,8 @@ header h1:after {
     3) Add a margin to the top of the nav links.
     4) Remove the default padding from the list.
 */
-header nav ul {
+header nav ul,
+footer nav ul {
     list-style-type: none; /* 1 */
     text-align: center; /* 2 */
     margin-top: 1.0rem; /* 3 */
@@ -250,23 +251,27 @@ header nav ul {
 }
 
 /* Display the navigation links as a centered, horizontal list. */
-header nav ul li {
+header nav ul li,
+footer nav ul li {
     display: inline;
     margin: 0 1.2rem;
 }
 
 /* Remove default link styles. */
-header nav ul li a {
+header nav ul li a,
+footer nav ul li a {
     text-decoration: none;
     color: var(--fg);
 }
 
 /* Add a hover effect to the navigation links. */
-header nav ul li a::before {
+header nav ul li a::before,
+footer nav ul li a::before {
     content: "❯ "; /* 1 */
     opacity: 0; /* 1 */
 }
-header nav ul li a:hover::before {
+header nav ul li a:hover::before,
+footer nav ul li a:hover::before {
     opacity: 1; /* 1 */
 }
 
